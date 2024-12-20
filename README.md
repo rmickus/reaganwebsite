@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A basic website.
 
 ## Available Scripts
 
@@ -39,8 +39,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Docker Commands
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run these commands to run this app in a docker environment:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build an image
+
+`docker image build -t <image name>:<version> .`
+
+### Run the container
+
+`docker run -dp 8000:3000 --name <container name> <image name>:<version>`
+
+### Access the front end
+
+http://localhost:8000/
